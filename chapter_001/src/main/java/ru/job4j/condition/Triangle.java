@@ -29,7 +29,7 @@ public class Triangle {
      * @return true или false
      */
     private boolean exist(double a, double c, double b) {
-        return a > 0 & b > 0 & c > 0;
+        return a > 0 & b > 0 & c > 0 & a + b > c & b + c > a & a + c > b;
     }
 
     /**
