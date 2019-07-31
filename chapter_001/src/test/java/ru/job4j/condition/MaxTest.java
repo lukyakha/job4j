@@ -10,9 +10,17 @@ public class MaxTest {
         Max max = new Max();
         int result = max.max(1, 2);
         assertThat(result, is(2));
-        int result2 = max.max(3, 2);
-        assertThat(result2, is(3));
-        int result3 = max.max(4, 4);
-        assertThat(result3, is(4));
+    }
+    @Test
+    public void whenMax1To2Then1() {
+        Max max = new Max();
+        int result = max.max(3, 2);
+        assertThat(result, is(3));
+    }
+    @Test
+    public void whenMax1To2ThenBoth() {
+        Max max = new Max();
+        int result = max.max(4, 4);
+        assertThat(result, is(4));
     }
 }
