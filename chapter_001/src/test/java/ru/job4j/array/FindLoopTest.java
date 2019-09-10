@@ -25,4 +25,14 @@ public class FindLoopTest {
         int expect = -1;
         assertThat(result, is(expect));
     }
+
+    @Test
+    public void whenArrayHas24To5() {
+        FindLoop find = new FindLoop();
+        int[] input = new int[] {5, 10, 3, 15, 25, 24};
+        int value = 24;
+        int result = find.indexOf(input, value);
+        int expect = 5;
+        assertThat(result, is(expect));
+    }
 }
